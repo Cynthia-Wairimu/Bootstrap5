@@ -347,11 +347,13 @@
             </ul>
           </div>
           <div class="col-md">
-
+            <div id="map"></div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- footer -->
 
     <!-- JavaScript Bundle with Popper -->
     <script
@@ -362,7 +364,9 @@
     <script>mapboxgl.accessToken = 'pk.eyJ1IjoiY3ludGhpYXdhaXJpbXUiLCJhIjoiY2wweDNzOWczMTd4czNibjFwcXBkbjU3YyJ9.BP4a4jpVs4KfFFphWodtIQ';
       var map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11'
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-1.286389, 36.817223],
+      zoom: 18,
       });
     </script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
